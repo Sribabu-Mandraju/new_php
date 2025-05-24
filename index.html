@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Masked Intel - Welcome</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+    <!-- Add this line -->
+  </head>
+  <body>
+    <div class="geometric-shapes">
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+    </div>
+
+    <header class="navbar">
+      <div class="logo">
+        <div class="logo-wrapper">
+          <img src="logo.png" alt="Masked Intel Logo Icon" class="logo-icon" />
+        </div>
+        <span>MASKED INTEL</span>
+      </div>
+
+      <nav>
+        <a href="about.html">About</a>
+        <a href="features.html">Features</a>
+        <a href="contact.html">Contact</a>
+        <a href="admin.html" class="admin-btn">
+          <i class="fas fa-user-shield"></i>
+          Admin Login
+        </a>
+      </nav>
+    </header>
+
+    <main class="hero">
+      <div class="hero-text">
+        <h1>Welcome to<br /><span>Masked Intel</span></h1>
+        <p>
+          An advanced facial recognition and crowd analytic tool built to
+          enhance public safety and security.
+        </p>
+        <button class="login-btn" onclick="redirectToLogin()">
+          User Login
+        </button>
+      </div>
+
+      <div class="hero-image">
+        <img src="3d-face-auth.png" alt="3D face UI" />
+      </div>
+    </main>
+
+    <script>
+      function redirectToLogin() {
+        window.location.href = "login.html";
+      }
+    </script>
+    <section class="brand-feature">
+      <div class="brand-logo">
+        <img src="logo.png" alt="Masked Intel Badge Logo" />
+        <p>Trusted AI Security</p>
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Login - Masked Intel</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+    <!-- Add this line -->
+  </head>
+  <body>
+    <div class="geometric-shapes">
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+    </div>
+
+    <div class="login-wrapper">
+      <div class="login-container">
+        <div class="login-header">
+          <h1>LOGIN</h1>
+          <!-- Removed the logo -->
+        </div>
+
+        <form
+          onsubmit="login(event)"
+          class="login-form"
+          action="connect.php"
+          method="post"
+        >
+          <div class="input-group">
+            <input type="email" id="email" placeholder="Email" required />
+          </div>
+          <div class="input-group">
+            <input
+              type="password"
+              id="password"
+              placeholder="Password"
+              required
+            />
+          </div>
+          <div class="login-buttons">
+            <button
+              type="button"
+              class="login-submit-btn admin-login"
+              onclick="loginAsAdmin()"
+            >
+              <span>Admin Login</span>
+            </button>
+            <button
+              type="button"
+              class="login-submit-btn user-login"
+              onclick="loginAsUser()"
+            >
+              <span>User Login</span>
+            </button>
+          </div>
+        </form>
+
+        <div class="login-footer">
+          <a href="index.html" class="back-to-home">Back to Home</a>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // Set animation delays for input groups
+      document.addEventListener("DOMContentLoaded", function () {
+        const inputs = document.querySelectorAll(".input-group");
+        inputs.forEach((input, index) => {
+          input.style.setProperty("--input-index", index);
+        });
+      });
+    </script>
+  </body>
+</html>
